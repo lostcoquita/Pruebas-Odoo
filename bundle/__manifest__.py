@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Bundles base module',
+    'name': 'Prueba',
     'category': 'Technical',
     'summary': 'Bundles',
     'version': '1.0.1',
