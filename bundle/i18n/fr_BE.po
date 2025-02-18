@@ -1,0 +1,239 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* smart_ohm_bundle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-28 20:19+0000\n"
+"PO-Revision-Date: 2022-05-28 22:24+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: smart_ohm_bundle
+#: model:ir.actions.act_window,name:smart_ohm_bundle.action_add_bundle
+msgid "Add Bundle"
+msgstr "Ajouter un Bundle"
+
+#. module: smart_ohm_bundle
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.add_bundle_product_form_view
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.product_template_form_view
+msgid "Add a note"
+msgstr "Ajouter une note"
+
+#. module: smart_ohm_bundle
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.add_bundle_product_form_view
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.product_template_form_view
+msgid "Add a product"
+msgstr "Ajouter un produit"
+
+#. module: smart_ohm_bundle
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.add_bundle_product_form_view
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.product_template_form_view
+msgid "Add a section"
+msgstr "Ajouter une section"
+
+#. module: smart_ohm_bundle
+#: model:ir.model,name:smart_ohm_bundle.model_add_bundle_product
+msgid "Allow to add components of a bundle product to a sale order"
+msgstr "Permet d'ajouter les composants d'un Bundle à un bon de commande"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__product_tmpl_id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__product_tmpl_id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__bundle_wizard_id
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.add_bundle_product_form_view
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.product_template_form_view
+msgid "Bundle"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_product__bundle_raw_material_ids
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_template__bundle_raw_material_ids
+msgid "Bundle Raw Materials"
+msgstr "Composants d'un Bundle"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,help:smart_ohm_bundle.field_product_product__is_a_bundle
+#: model:ir.model.fields,help:smart_ohm_bundle.field_product_template__is_a_bundle
+msgid ""
+"Bundle can be add to SO or PO, it allows to add a set of products quickly."
+msgstr ""
+"Les Bundles peuvent être ajouté au SO ou au PO, ils permettent d'ajouter "
+"un ensemble d'article rapidement."
+
+#. module: smart_ohm_bundle
+#: code:addons/smart_ohm_bundle/models/product_template.py:0
+#, python-format
+msgid "Bundle products must be of type consumable."
+msgstr "Les Bundles doivent être des articles de type consommable."
+
+#. module: smart_ohm_bundle
+#: code:addons/smart_ohm_bundle/models/bundle_raw_mat.py:0
+#, python-format
+msgid "Bundle's raw materials must have a product."
+msgstr "Les composants d'un Bundle doivent avoir un article."
+
+#. module: smart_ohm_bundle
+#: model_terms:ir.ui.view,arch_db:smart_ohm_bundle.product_template_search_form_view_bundle
+msgid "Bundles"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__product_uom_category_id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__product_uom_category_id
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__bundle_raw_mat_ids
+msgid "Components"
+msgstr "Composants"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,help:smart_ohm_bundle.field_bundle_raw_mat__product_uom_category_id
+#: model:ir.model.fields,help:smart_ohm_bundle.field_bundle_raw_mat_wiz__product_uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__create_uid
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__create_uid
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__create_date
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__create_date
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__display_name
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__display_name
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__display_name
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_template__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__display_type
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__display_type
+msgid "Display Type"
+msgstr "Type d'affichage"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_product__is_a_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_template__is_a_bundle
+msgid "Is a bundle"
+msgstr "Est un Bundle"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product____last_update
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat____last_update
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz____last_update
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__write_uid
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__write_uid
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__write_date
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__write_date
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__name
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields.selection,name:smart_ohm_bundle.selection__bundle_raw_mat__display_type__line_note
+#: model:ir.model.fields.selection,name:smart_ohm_bundle.selection__bundle_raw_mat_wiz__display_type__line_note
+msgid "Note"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__product_id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__product_id
+msgid "Product"
+msgstr "Article"
+
+#. module: smart_ohm_bundle
+#: model:ir.model,name:smart_ohm_bundle.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_add_bundle_product__quantity
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__quantity
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: smart_ohm_bundle
+#: model:ir.model,name:smart_ohm_bundle.model_bundle_raw_mat_wiz
+msgid "Represent a components of a bundle"
+msgstr "Représente les composants d'un bundle"
+
+#. module: smart_ohm_bundle
+#: model:ir.model,name:smart_ohm_bundle.model_bundle_raw_mat
+msgid "Represent the component of a bundle"
+msgstr "Représente les composants d'un bundle"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields.selection,name:smart_ohm_bundle.selection__bundle_raw_mat__display_type__line_section
+#: model:ir.model.fields.selection,name:smart_ohm_bundle.selection__bundle_raw_mat_wiz__display_type__line_section
+msgid "Section"
+msgstr ""
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,help:smart_ohm_bundle.field_bundle_raw_mat__display_type
+#: model:ir.model.fields,help:smart_ohm_bundle.field_bundle_raw_mat_wiz__display_type
+msgid "Technical field for UX purpose."
+msgstr "Champ technique utilisé dans les vues"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__uom_id
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__uom_id
+msgid "Unit Of Measure"
+msgstr "Unité de mesure"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__unit_quantity
+msgid "Unit Quantity"
+msgstr "Quantité unitaire"
+
+#. module: smart_ohm_bundle
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat__sequence
+#: model:ir.model.fields,field_description:smart_ohm_bundle.field_bundle_raw_mat_wiz__sequence
+msgid "sequence"
+msgstr "Séquence"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">so.product.template.form.view.inherited.bundle</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <field name="type" position="after">
+                <field name="is_a_bundle" invisible="type != 'consu' or is_storable"/>
+            </field>
+            <xpath expr="//notebook" position="inside">
+                <page string="Bundle" name="bundle" invisible="not is_a_bundle">
+                    <field name="bundle_raw_material_ids" widget="section_and_note_one2many">
+                        <list name="embedded_bundle_tree_view" editable="bottom">
+                            <control>
+                                <create name="add_product_control" string="Add a product"/>
+                                <create name="add_section_control" string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                                <create name="add_note_control" string="Add a note" context="{'default_display_type': 'line_note'}"/>
+                            </control>
+                            <field name="display_type" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="sequence" widget="handle" />
+                            <field
+                                    name="product_id"
+                                    required="not display_type"
+                                    context="{'quantity': quantity,'uom': uom_id, 'company_id': parent.company_id}"
+                                    domain="['|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]"/>
+                            <field name="name" widget="section_and_note_text" string="Description"/>
+                            <field name="quantity"/>
+                            <field name="uom_id" required="not display_type"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_search_form_view_bundle" model="ir.ui.view">
+        <field name="name">product.template.search.bundle.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='combo']" position="after">
+                <separator/>
+                <filter string="Bundles" name="bundles" domain="[('is_a_bundle', '=', True)]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

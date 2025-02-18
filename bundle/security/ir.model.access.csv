@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bundle_raw_mat,Access bundle.raw.mat,model_bundle_raw_mat,base.group_user,1,1,1,1
+access_add_product_bundle,Access add.bundle.product,model_add_bundle_product,base.group_user,1,1,1,1
+access_bundle_raw_mat_wiz,Access bundle.raw.mat.wiz,model_bundle_raw_mat_wiz,base.group_user,1,1,1,1
